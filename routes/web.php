@@ -35,9 +35,9 @@ Route::middleware('auth')->group(function () {
     });
 
     Route::resource('tasks', TaskController::class);
-    Route::get('tasks/archives', [TaskController::class, 'archives'])->name('tasks.archives');
-    Route::patch('tasks/archives/{task}', [TaskController::class, 'archive'])->name('tasks.archives.update');
-    Route::patch('tasks/unarchives/{task}', [TaskController::class, 'unarchive'])->name('tasks.unarchives');
+    Route::get('tasks-archives', [TaskController::class, 'archives'])->name('tasks.archives');
+    Route::patch('tasks-archives/{task}', [TaskController::class, 'archive'])->name('tasks.archives.update');
+    Route::patch('tasks-unarchives/{task}', [TaskController::class, 'unarchive'])->name('tasks.unarchives');
 
     Route::resource('comments', CommentController::class)->only(['store']);
 });
