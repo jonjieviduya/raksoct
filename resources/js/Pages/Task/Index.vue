@@ -149,7 +149,7 @@ const applyFilter = () => {
                                                     <SecondaryButton @click="archiveTask(task)">Archive</SecondaryButton>
                                                     <SecondaryButton
                                                         @click="deleteTask(task)"
-                                                        class="bg-rose-600 hover:bg-rose-700 border-rose-700 text-zinc-100"
+                                                        class="bg-rose-500 hover:bg-rose-600 border-rose-600 text-zinc-100"
                                                     >Delete</SecondaryButton>
                                                 </div>
                                             </td>
